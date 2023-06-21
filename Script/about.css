@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: century Gothic;
+    background:url(wallpapersden.com_cool-4k-pattern_3840x2160.jpg) ;
+    background-size:cover;
+    background-position: center;
+}
+
+.container {
+    height: 75vh;
+    width: 30%;
+    background:  rgba(235, 213, 20, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.image {
+    position: relative;
+    top: 5%;
+    align-items: center;
+}
+
+.dis{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

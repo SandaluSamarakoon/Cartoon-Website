@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+
+  <mata charset="utf-8">
+    <meta name="viewport" content="width=device-width, inititial-scale=1.0">
+    <title>PIXIV</title>
+
+    <link rel="stylesheet" href="./Style/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+  <div id="navbar-container">
+    <nav class="navbar">
+      <ol class="main-menu">
+        <li class="main-item" id="home" onclick="gotoLink('Home.html')"><span class="Home"></span></li>
+        <li class="main-item" onclick="gotoLink('History.html')"><span class="History"></span></li>
+        <li class="main-item"><span class="Categories"></span>
+          <ol class="sub-menu">
+            <li class="sub-item item-left" onclick="gotoLink('Fairy tales.html')"><span class="small"></span></li>
+            <li class="sub-item item-left" onclick="gotoLink('Funny Cartoons.html')"><span class="standart"></span></li>
+            <li class="sub-item item-left" onclick="gotoLink('Adventure.html')"><span class="big"></span></li>
+            <li class="sub-item item-right" id="premium" onclick="gotoLink('superheros.html')"><span
+                class="premium"></span></li>
+          </ol>
+        </li>
+        <li class="main-item" onclick="gotoLink('About.html')"><span class="contact"></span></li>
+      </ol>
+    </nav>
+  </div>
+  <section class="showcase">
+
+    <header>
+      <h2 class="logo">cartoon</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="vedio.2.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never Stop To</h2>
+      <h3>Exploring The Cartoon World</h3>
+      <p>Here are the best cartoon characters quotes from movies and TV shows that will surely inspire you. Learn
+        wisdom, be inspired, and motivated by our old and new cartoon characters quotes. Watching cartoons entertain
+        kids while they learn good morals and values at the same time from their favorite characters. May these cartoon
+        quotes from Disney, Pixar, Marvel, and DC will serve as a role model for your kids and young at heart
+        individuals. You can share these famous cartoon character quotes with your friends, family, and loved ones to
+        inspire them as well</p>
+      <a href="#">Explore</a>
+    </div>
+    <!--<ul class="social">
+              <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+              <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+              <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+            </ul>-->
+
+  </section>
+
+  <audio autoplay loop=infinite>
+    <source src="./audio/Minions singing Universal logo Complete.mp3" type="audio/oggs">
+    <source src="./audio/Minions singing Universal logo Complete.mp3" type="audio/mp3">
+  </audio>
+
+  <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+  <script type="text/javascript" src="./Script/script.js"></script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Heros</title>
+  <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet">-->
+  <link rel="stylesheet" href="Style/SuperHerosstyle.css">
+</head>
+
+<body>
+
+  <div id="slider-containder">
+    <div class="app">
+      <div id="navbar-container">
+        <nav class="navbar">
+          <ol class="main-menu">
+            <li class="main-item" id="home" onclick="gotoLink('Home.html')"><span class="Home"></span></li>
+            <li class="main-item" onclick="gotoLink('History.html')"><span
+                class="History"></span></li>
+            <li class="main-item"><span class="Categories"></span>
+              <ol class="sub-menu">
+                <li class="sub-item item-left" onclick="gotoLink('Fairy tales.html')"><span class="small"></span></li>
+                <li class="sub-item item-left" onclick="gotoLink('Funny Cartoons.html')"><span class="standart"></span></li>
+                <li class="sub-item item-left" onclick="gotoLink('Adventure.html')"><span class="big"></span></li>
+                <li class="sub-item item-right" id="premium" onclick="gotoLink('superheros.html')"><span class="premium"></span></li>
+              </ol>
+            </li>
+            <li class="main-item" onclick="gotoLink('About.html')"><span class="contact"></span></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="cardList">
+        <button class="cardList__btn btn btn--left">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-left"></use>
+            </svg>
+          </div>
+        </button>
+
+        <div class="cards__wrapper">
+
+          <div class="card current--card" onclick="gotoLink('spiderman.html')">
+            <div class="card__image" >
+              <img src="Pictures\001.gif" alt="" >
+            </div>
+     
+          </div>
+
+          <div class="card next--card" onclick="gotoLink('superman.html')">
+            <div class="card__image" >
+              <img src="Pictures\supermangif01.gif" alt="" />
+            </div>
+       
+          </div>
+
+          <div class="card previous--card" onclick="gotoLink('ninjatuetles.html')">
+            <div class="card__image">
+              <img src="Pictures\ninja.gif" alt="" />
+            </div>
+            
+          </div>
+
+          
+        </div>
+        
+
+        <button class="cardList__btn btn btn--right">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </div>
+        </button>
+      </div>
+
+
+
+      <div class="infoList">
+        <div class="info__wrapper">
+
+          <div class="info current--info">
+            <h1 class="text name" >Spider Man</h1>
+            <!-- <h4 class="text location"> </h4> -->
+            <p class="text description"></p>
+          </div>
+
+          <div class="info next--info">
+            <h1 class="text name">Super Man</h1>
+            <!-- <h4 class="text location"></h4> -->
+            <p class="text description"></p>
+          </div>
+
+          <div class="info previous--info">
+            <h1 class="text name">Ninja Turtles</h1>
+            <!-- <h4 class="text location"></h4> -->
+            <p class="text description"></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="app__bg">
+        <div class="app__bg__image current--image">
+          <img src="Pictures\003.jpg" alt="" />
+        </div>
+
+        <div class="app__bg__image next--image">
+          <img src="Pictures\superman.jpg" alt="" />
+        </div>
+        <div class="app__bg__image previous--image">
+          <img src="Pictures\ninjaturtles.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="loading__wrapper">
+      <div class="loader--text">Loading...</div>
+      <div class="loader">
+        <span></span>
+      </div>
+    </div>
+
+  </div>
+
+  <svg class="icons" style="display: none;">
+    <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+      <polyline points='328 112 184 256 328 400'
+        style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+    </symbol>
+    <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+      <polyline points='184 112 328 256 184 400'
+        style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+    </symbol>
+  </svg>
+
+  <audio autoplay loop=infinite>
+    <source src="./audio/y2mate.com - Api Raja Ibbo Theme Song  අප රජ ඉබබ  Sirasa TV.mp3" type="audio/oggs">
+    <source src="./audio/y2mate.com - Api Raja Ibbo Theme Song  අප රජ ඉබබ  Sirasa TV.mp3" type="audio/mp3">
+  </audio>
+
+
+
+  <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+  <script type="text/javascript" src="Script/script.js"></script>
+</body>
+
+</html>
